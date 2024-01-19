@@ -20,7 +20,7 @@ use App\Http\Controllers\PencapaianPelatihController;
 
 Route::get('/', [DashboardController::class, 'indexHome']);
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('guest');
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -29,8 +29,7 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::middleware('guest')->group(function () {
+
     // Gunakan route resource untuk menggantikan beberapa route dengan satu definisi
     Route::resource('/pelatih', PelatihController::class);
     Route::resource('/pencapaian', PencapaianPelatihController::class);
-});

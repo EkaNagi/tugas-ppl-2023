@@ -25,7 +25,10 @@ class RegisterController extends Controller
             'logo' => 'sf.png',
 
             'css' => 'register.css',
-            'js' => 'register.js'
+            'js' => 'register.js',
+
+            'text'=> 'Sistem Data Pelatih',
+            'text2'=> 'ManyChance'
         ]);
     }
 

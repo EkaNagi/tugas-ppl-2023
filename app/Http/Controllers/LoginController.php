@@ -22,7 +22,10 @@ class LoginController extends Controller
             'register2' => 'Daftar Disini',
 
             'css' => 'login.css',
-            'js' => 'login.js'
+            'js' => 'login.js',
+
+            'text'=> 'Sistem Data Pelatih',
+            'text2'=> 'ManyChance'
         ]);
     }
 
@@ -35,7 +38,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/');
         }
 
         return back()->with('loginError', 'Login Failed!');
@@ -48,6 +51,6 @@ class LoginController extends Controller
 
         request()->session()->invalidate();
         request()->session()->regenerateToken();
-        return redirect('/dashboard');
+        return redirect('/');
     }
 }
