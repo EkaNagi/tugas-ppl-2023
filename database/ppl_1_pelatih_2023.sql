@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 19, 2024 at 07:44 AM
+-- Generation Time: Jan 19, 2024 at 08:02 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -99,7 +99,7 @@ CREATE TABLE `pelatihs` (
 INSERT INTO `pelatihs` (`id`, `nama`, `photo`, `nomor_telepon`, `umur`, `alamat`, `club`, `riwayat_club`, `created_at`, `updated_at`) VALUES
 (5, 'Bojan Hodak', 'images/emJidrW5lWMJGVZtcMBsxwApWOR1dnBz0XclqGsJ.webp', '08122177327', '52', 'Kota Bandung', 'PERSIB', 'UPB-MyTeam FC, Phnom Penh, SD Luning, Kelantan FC, Johor DT, Malaysia U19, PSM Makassar, Kuala Lumpur, PERSIB', '2023-12-30 08:54:30', '2023-12-30 08:54:30'),
 (6, 'Stefano Cugurra', 'images/BV6StwYNUAgggM3H8fu6QqDiCrEvGihd6LizIazO.webp', '02156970303', '49', 'Kota Denpasar', 'Bali United', 'Brescia Youth, Al-Najma, Jurong FC, Persebaya, Pato Branco-PR, Kuala Muda Naza, Chiangrai Utd., Phuket FC, Osotspa, Navy FC, Persija Jakarta, Bali United', '2023-12-30 08:57:01', '2023-12-30 08:57:01'),
-(7, 'Bojan Hodak 2', 'images/0Ah42BkNiX0abdigoMhkOpyEKfJT0r2faHcLKQRo.webp', '12984192481', '52', 'Jl. Kopo', 'Kopo United', 'Kopo United, Mencester United', '2024-01-01 20:30:27', '2024-01-01 20:30:27');
+(8, 'Paul Munster', 'images/V4MsK1Pj8hOhQOAyWDUpsiGtkNZHStN6VhiLh5dS.webp', '0318202195', '41', 'Jl. A Yani No. 88 Surabaya', 'Persebaya', 'FC Assyriska, Örebro Syr., BK Forward U21, BK Forward, Örebro SK U21, Örebro SK U19, Minerva Punjab, Vanuatu U19, Vanuatu, Bhayangkara, Brunei, Persebaya', '2024-01-19 00:59:34', '2024-01-19 00:59:34');
 
 -- --------------------------------------------------------
 
@@ -125,7 +125,8 @@ INSERT INTO `pencapaian_pelatihs` (`id`, `pelatih_id`, `individu`, `trofi`, `cre
 (5, 5, 'individukeren', 'individutapikeren', '2024-01-01 20:23:00', '2024-01-01 20:23:00'),
 (6, 5, 'indidididu', NULL, '2024-01-01 20:23:27', '2024-01-01 20:23:27'),
 (7, 5, 'testset', 'testestset', '2024-01-01 20:47:53', '2024-01-01 20:47:53'),
-(8, 7, 'Pelatih paling keren 2023', 'Kerenz2023', '2024-01-18 23:52:12', '2024-01-18 23:52:12');
+(8, 7, 'Pelatih paling keren 2023', 'Kerenz2023', '2024-01-18 23:52:12', '2024-01-18 23:52:12'),
+(9, 5, 'Penghargaan paling oke', NULL, '2024-01-19 00:59:49', '2024-01-19 00:59:49');
 
 -- --------------------------------------------------------
 
@@ -242,13 +243,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `pelatihs`
 --
 ALTER TABLE `pelatihs`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `pencapaian_pelatihs`
 --
 ALTER TABLE `pencapaian_pelatihs`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
